@@ -13,11 +13,34 @@ void wczytaj(double *a1,double *a2,double *b1,double *b2,double *c1,double *c2)
         puts("Podaj wartosc c2: ");
         scanf("%lf",c2);
 }
-
+double wyznacznik_glowny(double a1,double a2,double b1,double b2)
+{
+return a1*b2-b1*a2;
+}
+double wyznacznik_x(double c1,double b2,double b1,double c2)
+{
+return c1*b2-b1*c2;
+}
+double wyznacznik_y(double a1,double c2,double c1,double a2)
+{ 
+return a1*c2-c1*a2;
+}
 int main()
 {
-	double a1,a2,b1,b2,c1,c2,W,Wx,Wy;
+	double a1,a2,b1,b2,c1,c2,W,Wx,Wy,x,y;
 	wczytaj (&a1,&a2,&b1,&b2,&c1,&c2);
+	W=wyznacznik_glowny(a1,b2,b1,a2);
+	Wx=wyznacznik_x(c1,b2,b1,c2);
+	Wy=wyznacznik_y(a1,c2,c1,a2);
+	x=Wx/W;
+	y=Wy/W;
 
+
+
+
+printf("W = %lf",W);
+printf("Wx = %lf",Wx);
+printf("Wy = %lf",Wy);
+printf("x wynosi %lf, a y wynosi %lf",x,y);
 return 0;
 }
