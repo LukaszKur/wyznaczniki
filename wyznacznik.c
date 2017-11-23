@@ -38,9 +38,9 @@ int main()
 
 
 
-printf("W = %lf",W);
-printf("Wx = %lf",Wx);
-printf("Wy = %lf",Wy);
-printf("x wynosi %lf, a y wynosi %lf",x,y);
+printf("W = %lf\n",W);
+printf("Wx = %lf\n",Wx);
+printf("Wy = %lf\n",Wy);
+printf("x wynosi %lf, a y wynosi %lf\n",x,y);
 return 0;
 }
