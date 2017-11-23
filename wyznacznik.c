@@ -33,5 +33,4 @@ int main(void)
 	scanf("%i",&b1);
 	printf("Podaj wartosc b2: ");
 	scanf("%i",&b2);
-	printf("Podaj wartosc c1: ");
-	scanf("%",&c1);
+	
